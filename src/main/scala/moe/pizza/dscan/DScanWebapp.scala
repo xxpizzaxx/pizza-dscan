@@ -1,11 +1,14 @@
+package moe.pizza.dscan
+
 /**
  *
  * Created by Andi on 15/12/2015.
  */
-import spark._
-import spark.Spark._
-import SparkWebScalaHelpers._
+
 import slick.jdbc.JdbcBackend._
+import spark.Spark._
+import spark._
+import SparkWebScalaHelpers._
 
 import scala.io.Source
 

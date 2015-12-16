@@ -1,3 +1,5 @@
+package moe.pizza.dscan
+
 import slick.jdbc.JdbcBackend._
 
 /**

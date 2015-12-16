@@ -1,6 +1,9 @@
-import slick.jdbc.JdbcBackend
-import slick.driver.MySQLDriver.api._
+package moe.pizza.dscan
+
 import moe.pizza.sdeapi._
+import slick.driver.MySQLDriver.api._
+import slick.jdbc.JdbcBackend
+
 import scala.concurrent.duration._
 
 /**

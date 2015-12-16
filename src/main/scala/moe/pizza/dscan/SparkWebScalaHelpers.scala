@@ -1,4 +1,6 @@
-import play.twirl.api.{HtmlFormat, Html}
+package moe.pizza.dscan
+
+import play.twirl.api.HtmlFormat
 import spark._
 
 /**
