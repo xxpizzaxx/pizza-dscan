@@ -10,7 +10,8 @@ object DScan {
 
 }
 case class DScan(contents: List[DScanLine]) {
-  def createBreakdown(): Map[String, Int] = {
-    contents.groupBy(_.typeName).mapValues(_.length)
+  def createBreakdown(db: DBOps): Map[db.GroupData, Int] = {
+    val counts = contents.groupBy(_.typeName).mapValues(_.length)
+    counts.map(kv => (db.groups(kv._1), kv._2))
   }
 }

@@ -1,0 +1,9 @@
+@(dscan: DScan, system: String, db: DBOps)
+
+<h1>Results - @system</h1>
+
+<ul>
+@for(item <- dscan.createBreakdown(db)) {
+    <li>@item</li>
+}
+</ul>

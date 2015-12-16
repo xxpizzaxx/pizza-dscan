@@ -13,7 +13,6 @@ class DScanSpec extends FlatSpec {
     val data = Source.fromURL(getClass.getResource("/wormhole.txt")).getLines().mkString("\n")
     val d = DScan.create(data)
 
-
   }
 
 
